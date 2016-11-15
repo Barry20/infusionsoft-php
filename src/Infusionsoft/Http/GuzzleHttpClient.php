@@ -18,12 +18,11 @@ class GuzzleHttpClient extends Client implements ClientInterface
     public $debug;
     public $httpLogAdapter;
 
-    public function __construct($debug, LoggerInterface $httpLogAdapter)
+    public function __construct($debug, LoggerInterface $httpLogAdapter, $config = [])
     {
         $this->debug = $debug;
         $this->httpLogAdapter = $httpLogAdapter;
 
-        $config = [];
         if($this->debug){
             $config['handler'] = HandlerStack::create();
             $config['handler']->push(

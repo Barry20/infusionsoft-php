@@ -244,7 +244,7 @@ class Infusionsoft
     public function getHttpClient()
     {
         if (!$this->httpClient) {
-            return new Http\GuzzleHttpClient($this->debug, $this->getHttpLogAdapter());
+            return new Http\GuzzleHttpClient($this->debug, $this->getHttpLogAdapter(), ["timeout" => 0]);
         }
 
         return $this->httpClient;
