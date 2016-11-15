@@ -1,6 +1,6 @@
 {
-    "name": "infusionsoft/php-sdk",
-    "description": "PHP SDK for the Infusionsoft",
+    "name": "barry20/infusionsoft-php",
+    "description": "Forked PHP SDK for the Infusionsoft",
     "keywords": [
         "infusionsoft",
         "sdk"
@@ -11,6 +11,10 @@
         {
             "name": "Infusionsoft",
             "homepage": "https://developer.infusionsoft.com"
+        },
+        {
+            "name": "Barry20",
+            "homepage": "https://github.com/Barry20"
         }
     ],
     "require": {
